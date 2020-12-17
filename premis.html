@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "premis.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cientifica">
+            <header>
+                <img src="foto/fulla2.png" width="60" height="40">
+                <a>Galeria</a>
+                <img src="foto/fulla.png" width="60" height="40">
+            </header>
+        </div>
+        <div class="explicacio">
+            <nav>
+                <ul class="nav_links">
+                    <dl><a href="index.html"><b id="home">PRESENTACIÓ</b></a></dl>
+                    <dl><a href="biografia.html"><b id="home">BIOGRAFIA</b></a></dl>
+                    <dl><a href="obra.html"><b>OBRA</b></a></dl>
+                    <div class="aquest"><dl><a href="galeria.html"><b>GALERIA</b></a></dl></div>
+                </ul>
+            </nav>
+        </div>
+        <div class="contingut">
+            <div class="biografia">
+                <ul>
+                    <li><a href="publifotos.html">PUBLICIACIONS</a></li>
+                    <li><a href="premis.html">PREMIS</a></li>
+                    <li><a href="recerca.html">RECERCA</a></li>
+                    <li><a href="ambit.html">ÀMBIT</a></li>
+                </ul>
+            </div>
+            <div class="galeria">
+                <button id="retroceder">&#60</button>
+                <div id="imagen"></div>
+                <button id="avanzar">&#62</button>
+                
+                <!--<input type="radio" name="navegacion" id="_1" checked>
+                <input type="radio" name="navegacion" id="_2">
+                <input type="radio" name="navegacion" id="_3">
+                <input type="radio" name="navegacion" id="_4">
+                <input type="radio" name="navegacion" id="_5"> 
+                <input type="radio" name="navegacion" id="_6"> 
+                <input type="radio" name="navegacion" id="_7">
+                <img src="foto/Premi/Premiii.jpg" alt="Galeria CSS 1" width="300" height="500">
+                <img src="foto/Premi/Nuria_Lopez_Bigas_premio_cancer_02.jpg" alt="Galeria CSS 2" width="500" height="400">
+                <img src="foto/Premi/2901727.jpg" alt="Galeria CSS 3" width="500" height="450">
+                <img src="foto/Premi/premi4.jpg" alt="Galeria CSS 4" width="500" height="500">
+                <img src="foto/Premi/premi.jpg" alt="Galeria CSS 5" width="500" height="400">
+                <img src="foto/Premi/home-dream-06@2x.jpg" alt="Galeria CSS 6" width="400" height="500">
+                <img src="foto/Premi/premi2.jpg" alt="Galeria CSS 7" width="400" height="500">-->
+             </div>
+            
+                
+                
+        </div>
+
+        <div class="peupag">
+            <footer>
+                <a title="instagram" href="https://www.instagram.com/nlbigas/" target="_blank"><img src="foto/instagram-2.png" width="30" height="30" alt="instagram"></a>
+                <a title="twitter" href="https://twitter.com/nlbigas?lang=es" target="_blank"><img src="foto/gorjeo.png" width="30" height="30" alt="twitter"></a>
+                <a title="linkedin" href="https://www.linkedin.com/in/nlbigas/" target="_blank"><img src="foto/linkedin.png" width="30" height="30" alt="linkedin"></a>
+                <a title="mail" href="mailto:nuria.lopez@irbbarcelona.org" target="_blank"><img src="foto/gmail.png" width="30" height="30" alt="mail"></a>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        
+        const IMAGENES = [
+            'foto/Premi/Premiii.jpg',
+            'foto/Premi/Nuria_Lopez_Bigas_premio_cancer_02.jpg',
+            'foto/Premi/2901727.jpg',
+            'foto/Premi/premi4.jpg',
+            'foto/Premi/premi.jpg',
+            'foto/Premi/premi5.jpg',
+            'foto/Premi/premi2.jpg',
+        ];
+
+        let posicionActual = 0;
+        let botonBack = document.querySelector('#retroceder');
+        let botonNext = document.querySelector('#avanzar');
+        let imagen = document.querySelector('#imagen');
+        let intervalo;
+
+        function pasarFoto() {
+            if(posicionActual >= IMAGENES.length - 1) {
+                posicionActual = 0;
+            } else {
+                posicionActual++;
+            }
+            renderizarImagen();
+        }
+
+        
+        function retrocederFoto() {
+            if(posicionActual <= 0) {
+                posicionActual = IMAGENES.length - 1;
+            } else {
+                posicionActual--;
+            }
+            renderizarImagen();
+        }
+
+        
+        function renderizarImagen () {
+            imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+        }
+
+        botonNext.addEventListener('click', pasarFoto);
+        botonBack.addEventListener('click', retrocederFoto);
+        
+        renderizarImagen();
+    } 
+</script>
+
+</html>

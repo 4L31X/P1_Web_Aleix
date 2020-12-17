@@ -1,0 +1,117 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+body{
+    background-image: url(foto/fons.png) ;
+}
+
+
+.cientifica a{
+    color:white;
+    font-size: 50px;
+    font-style: bold;
+}
+
+.cientifica img{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cientifica {
+    
+    text-align: center;
+    background: -webkit-linear-gradient(-45deg, red,blue);
+}
+
+.container{
+    max-width: 1000px;
+    min-width: 300px;
+    width: 70%;
+    margin: 10px auto 10px auto;
+    background-image: url(foto/sda.jpg) ; 
+    border-width: 2px;
+}
+
+
+.contingut{
+    display: flex;
+    padding: 10px;
+}
+
+.descripcio a{
+    font-size: 20px;
+    color: white;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.descripcio {
+    
+    border-right: 1px solid #CCD1D1  ;
+    
+}
+
+.descripcio h2{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #CCD1D1  ;
+    color: white;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.descripcio img{
+    margin-left: 35px;
+}
+
+.navegacio a{
+    text-decoration: none;
+    font-size: 30px;
+    display: grid;
+    margin-left: 125px;
+    margin-bottom: 100px;
+}
+
+.nav_links a{
+    color:white;
+    text-decoration: none;
+}
+
+.data{
+    font-size:1.2em;
+    color:white;
+    margin:12px;
+    
+}
+
+
+.peupag img{
+    margin-top: 50px;
+    margin-left: 175px;
+    margin-bottom: 25px;
+}
+
+.peupag {
+    border-top: 1px solid #CCD1D1;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+.cita a{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: white;
+    border: 50px solid white;
+}
+
+.cita{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}

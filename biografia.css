@@ -1,0 +1,131 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.explicacio ul{
+    display: flex;
+}
+
+.explicacio a{
+    margin-right: 50px;
+}
+
+.container{
+    max-width: 1000px;
+    min-width: 300px;
+    width: 70%;
+    margin: 10px auto 10px auto;
+    background-image: url(foto/sda.jpg) ; 
+    border-width: 2px;
+}
+
+body{
+    background-image: url(foto/fons.png) ;
+}
+
+.cientifica a{
+    color:white;
+    font-size: 50px;
+    font-style: bold;
+}
+
+.cientifica img{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cientifica {
+    
+    text-align: center;
+    background: -webkit-linear-gradient(-45deg, red,blue);
+}
+
+.nav_links {
+    margin-left: 200px;
+    
+}
+
+.nav_links a{
+    text-decoration: none;
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+.biografia a:hover{   
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    margin-right: 28px;
+}
+
+.biografia a{
+    color:white;
+    margin-right: 50px;
+
+}
+
+.biografia li{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.biografia {
+    border-right: 1px solid white;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    
+}
+
+.aquest a{
+    background: -webkit-linear-gradient(-45deg, red,blue);
+    -webkit-background-clip: text;
+      color: transparent; 
+}
+
+.contingut {
+    display: flex;
+}
+
+.cub {
+    position: relative;
+    width: 700px;
+    height: 600px;
+  }
+  .cercle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  @keyframes moviment {
+    0% { left: 0; top: 0; } 
+    25% { left: 150px; top: 500px; } 
+    50% { left: 300px; top: 0px; } 
+    75% { left: 450px; top: 500px; } 
+    100% {left: 600px; top: 0px;}
+  }
+  
+  .cercle {
+    animation-name: moviment;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+.peupag img{
+    margin-top: 50px;
+    margin-left: 175px;
+    margin-bottom: 25px;
+}
+
+.peupag {
+    border-top: 1px solid #CCD1D1;
+    margin-right: 50px;
+    margin-left: 50px;
+}

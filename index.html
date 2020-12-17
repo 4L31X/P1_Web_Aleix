@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cientifica">
+            <header>
+                <img src="foto/probeta.png" width="40" height="50">
+                <a>Presentació</a>
+                <img src="foto/probeta.png" width="40" height="50">
+            </header>
+        </div>
+        <div class="web">
+            <div class="contingut">
+                <div class="descripcio">
+                    <img src="foto/nuria_lopez05_2_1.jpg" width="450" height="450">
+                    <br>
+                    <h2>NÚRIA LÓPEZ BIGAS</h2>
+                    <br>
+                    <a>Biòloga i doctora en genètica mol·lecular.</a>
+                    <br>
+                    <a>Postdoctorat en bioinformàtica liderant grups d'investigació</a>
+                    <br>
+                    <a>centrats en l'estudi del càncer desde una prespectiva genòmica</a>
+                </div>          
+
+                <div class="navegacio">
+                    <ul class="nav_links">
+                        <dl><a title="biografia" href="biografia.html"><img src="foto/Llibre.png" width="150" height="150">BIOGRAFIA</a></dl>
+                        <dl><a title="obra" href="obra.html"><img src="foto/Microscopi.png" width="150" height="150">OBRA</a></dl>
+                        <dl><a title="galeria" href="galeria.html"><img src="foto/Camara.png" width="190" height="150">GALERIA</a></dl>
+                    </ul>
+                </div>
+            </div>
+            <div class="cita">
+                <a href="https://www.lavanguardia.com/ciencia/quien/20161218/412698459920/nuria-lopez-bigas-ciencia-no-tiene-sentido-sin-honestidad.html" target="_blank">"La ciència no té sentit sense honestedat"</a>
+            </div>
+            <div class="peupag">
+                <footer>
+                    <a title="instagram" href="https://www.instagram.com/nlbigas/" target="_blank"><img src="foto/instagram-2.png" width="30" height="30" alt="instagram"></a>
+                    <a title="twitter" href="https://twitter.com/nlbigas?lang=es" target="_blank"><img src="foto/gorjeo.png" width="30" height="30" alt="twitter"></a>
+                    <a title="linkedin" href="https://www.linkedin.com/in/nlbigas/" target="_blank"><img src="foto/linkedin.png" width="30" height="30" alt="linkedin"></a>
+                    <a title="mail" href="mailto:nuria.lopez@irbbarcelona.org" target="_blank"><img src="foto/gmail.png" width="30" height="30" alt="mail"></a>
+                    
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+<script>
+    var d=new Date();
+    var month=new Array(12);
+    month[0]='Gener';month[1]='Febrer';month[2]='Març';month[3]='Abril';month[4]='Maig';month[5]='Juny';month[6]='Juliol';month[7]='Agost';month[8]='Setembre';month[9]='Octubre';month[10]='Novembre';month[11]='Desembre';
+    var todaysDate=+d.getDate()+' de '+month[d.getUTCMonth()]+' del '+d.getUTCFullYear();
+    document.getElementById('fechahoy').innerHTML='Avui és: '+todaysDate;
+</script>
+
+</html>
